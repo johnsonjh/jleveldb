@@ -5,7 +5,7 @@ go 1.16
 require (
 	github.com/fsnotify/fsnotify v1.4.10-0.20200417215612-7f4cf4dd2b52 // indirect
 	github.com/golang/snappy v0.0.3
-	github.com/johnsonjh/leaktestfe v0.0.0-20210305084125-5614f292a6aa // indirect
+	github.com/johnsonjh/leaktestfe v0.0.0-20210305084125-5614f292a6aa
 	github.com/kr/text v0.2.0 // indirect
 	github.com/nxadm/tail v1.4.9-0.20210306212145-92547340f0cc // indirect
 	github.com/onsi/ginkgo v1.15.2-0.20210308134706-edb77f876008
