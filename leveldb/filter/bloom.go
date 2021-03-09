@@ -80,7 +80,7 @@ func (g *bloomFilterGenerator) Add(key []byte) {
 
 func (g *bloomFilterGenerator) Generate(b Buffer) {
 	// Compute bloom filter size (in both bits and bytes)
-	nBits := uint32(len(g.keyHashes) * g.n)
+	nBits := uint32(len(g.keyHashes)) * uint32(g.n)
 	// For small n, we can see a very high false positive rate.  Fix it
 	// by enforcing a minimum bloom filter length.
 	if nBits < 64 {
