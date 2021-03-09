@@ -67,6 +67,9 @@ func (db *DB) flush(n int) (mdb *memDB, mdbFree int, err error) {
 	delayed := false
 	slowdownTrigger := db.s.o.GetWriteL0SlowdownTrigger()
 	pauseTrigger := db.s.o.GetWriteL0PauseTrigger()
+	// 请问您知道这里为什么要用匿名函数吗，我理解的是直接用循环就可以
+	// Do we know why an anonymous function is used here? 
+	// (A loop should be able to be used directly.)
 	flush := func() (retry bool) {
 		mdb = db.getEffectiveMem()
 		if mdb == nil {
