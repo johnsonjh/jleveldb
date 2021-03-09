@@ -1,14 +1,32 @@
 # JLevelDB
 
+----
+
 JLevelDB is an implementation of the
 [LevelDB key/value database](https://code.google.com/p/leveldb) in the
-[Go programming language](https://golang.org), based on [GoLevelDB](https://github.com/syndtr/goleveldb).
+[Go programming language](https://golang.org), based on [GoLevelDB](https://github.com/syndtr/goleveldb)
+
+----
 
 ## Requirements
 
-- Need at least `go1.16` or newer.
+- Go 1.16 or later
 
-## Usage
+----
+
+## Availability
+
+- [GitHub](https://github.com/johnsonjh/jleveldb)
+
+----
+
+## License
+
+- [BSD-2-Clause License](https://tldrlegal.com/license/bsd-2-clause-license-(freebsd))
+
+----
+
+## Examples
 
 Create or open a database:
 
@@ -21,6 +39,8 @@ defer db.Close()
 ...
 ```
 
+----
+
 Read or modify the database content:
 
 ```go
@@ -32,6 +52,8 @@ err = db.Put([]byte("key"), []byte("value"), nil)
 err = db.Delete([]byte("key"), nil)
 ...
 ```
+
+----
 
 Iterate over database content:
 
@@ -49,6 +71,8 @@ err = iter.Error()
 ...
 ```
 
+----
+
 Seek-then-Iterate:
 
 ```go
@@ -61,6 +85,8 @@ iter.Release()
 err = iter.Error()
 ...
 ```
+
+----
 
 Iterate over subset of database content:
 
@@ -75,6 +101,8 @@ err = iter.Error()
 ...
 ```
 
+----
+
 Iterate over subset of database content with a particular prefix:
 
 ```go
@@ -88,6 +116,8 @@ err = iter.Error()
 ...
 ```
 
+----
+
 Batch writes:
 
 ```go
@@ -98,6 +128,8 @@ batch.Delete([]byte("baz"))
 err = db.Write(batch, nil)
 ...
 ```
+
+----
 
 Use bloom filter:
 
@@ -110,3 +142,6 @@ db, err := leveldb.OpenFile("path/to/db", o)
 defer db.Close()
 ...
 ```
+
+----
+
