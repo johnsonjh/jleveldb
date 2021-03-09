@@ -1,12 +1,12 @@
-# GoLevelDB
+# JLevelDB
 
-This is an implementation of the
-[LevelDB key/value database](http:code.google.com/p/leveldb) in the
-[Go programming language](http:golang.org).
+JLevelDB is an implementation of the
+[LevelDB key/value database](https://code.google.com/p/leveldb) in the
+[Go programming language](https://golang.org), based on [GoLevelDB](https://github.com/syndtr/goleveldb).
 
 ## Requirements
 
-- Need at least `go1.14` or newer.
+- Need at least `go1.16` or newer.
 
 ## Usage
 
