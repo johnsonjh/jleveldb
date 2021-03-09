@@ -28,7 +28,7 @@ JLevelDB is an implementation of the
 
 ## Examples
 
-Create or open a database:
+- Create or open a database:
 
 ```go
 // The returned DB instance is safe for concurrent use. Which mean that all
@@ -41,7 +41,7 @@ defer db.Close()
 
 ----
 
-Read or modify the database content:
+- Read or modify the database content:
 
 ```go
 // Remember that the contents of the returned slice should not be modified.
@@ -55,7 +55,7 @@ err = db.Delete([]byte("key"), nil)
 
 ----
 
-Iterate over database content:
+- Iterate over database content:
 
 ```go
 iter := db.NewIterator(nil, nil)
@@ -73,7 +73,7 @@ err = iter.Error()
 
 ----
 
-Seek-then-Iterate:
+- Seek-then-Iterate:
 
 ```go
 iter := db.NewIterator(nil, nil)
@@ -88,7 +88,7 @@ err = iter.Error()
 
 ----
 
-Iterate over subset of database content:
+- Iterate over subset of database content:
 
 ```go
 iter := db.NewIterator(&util.Range{Start: []byte("foo"), Limit: []byte("xoo")}, nil)
@@ -103,7 +103,7 @@ err = iter.Error()
 
 ----
 
-Iterate over subset of database content with a particular prefix:
+- Iterate over subset of database content with a particular prefix:
 
 ```go
 iter := db.NewIterator(util.BytesPrefix([]byte("foo-")), nil)
@@ -118,7 +118,7 @@ err = iter.Error()
 
 ----
 
-Batch writes:
+- Batch writes:
 
 ```go
 batch := new(leveldb.Batch)
@@ -131,7 +131,7 @@ err = db.Write(batch, nil)
 
 ----
 
-Use bloom filter:
+- Use bloom filter:
 
 ```go
 o := &opt.Options{
@@ -144,4 +144,3 @@ defer db.Close()
 ```
 
 ----
-
