@@ -1,7 +1,7 @@
 //go:build goleveldbtests
 // +build goleveldbtests
 
-// Copyright (c) 2012, Suryandaru Triandana <syndtr@gmail.com>
+// Copyright © 2012, Suryandaru Triandana <syndtr@gmail.com>
 // All rights reserved.
 //
 // Use of this source code is governed by a BSD-style license that can be
