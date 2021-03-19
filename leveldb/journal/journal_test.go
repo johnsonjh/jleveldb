@@ -1,9 +1,13 @@
-// Copyright 2011 The LevelDB-Go Authors. All rights reserved.
+// Copyright © 2021, Jeffrey H. Johnson <trnsz@pobox.com>
+// Copyright 2011 The LevelDB-Go Authors.
+//
+// All rights reserved.
+//
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-// Taken from: https://code.google.com/p/leveldb-go/source/browse/leveldb/record/record_test.go?r=df1fa28f7f3be6c3935548169002309c12967135
-// License, authors and contributors informations can be found at bellow URLs respectively:
+//  Taken from: https://code.google.com/p/leveldb-go/source/browse/leveldb/record/record_test.go?r=df1fa28f7f3be6c3935548169002309c12967135
+//  License, author, and contributor information can be found at:
 // 	https://code.google.com/p/leveldb-go/source/browse/LICENSE
 //	https://code.google.com/p/leveldb-go/source/browse/AUTHORS
 //  https://code.google.com/p/leveldb-go/source/browse/CONTRIBUTORS

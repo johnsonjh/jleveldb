@@ -1,4 +1,6 @@
 // Copyright © 2012, Suryandaru Triandana <syndtr@gmail.com>
+// Copyright © 2021, Jeffrey H. Johnson <trnsz@pobox.com>
+//
 // All rights reserved.
 //
 // Use of this source code is governed by a BSD-style license that can be
@@ -68,7 +70,7 @@ func (db *DB) flush(n int) (mdb *memDB, mdbFree int, err error) {
 	slowdownTrigger := db.s.o.GetWriteL0SlowdownTrigger()
 	pauseTrigger := db.s.o.GetWriteL0PauseTrigger()
 	// 请问您知道这里为什么要用匿名函数吗，我理解的是直接用循环就可以
-	// Do we know why an anonymous function is used here? 
+	// Do we know why an anonymous function is used here?
 	// (A loop should be able to be used directly.)
 	flush := func() (retry bool) {
 		mdb = db.getEffectiveMem()

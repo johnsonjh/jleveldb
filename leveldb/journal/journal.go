@@ -1,26 +1,31 @@
-// Copyright 2011 The LevelDB-Go Authors. All rights reserved.
+// Copyright © 2021, Jeffrey H. Johnson <trnsz@pobox.com>
+// Copyright 2011 The LevelDB-Go Authors.
+//
+// All rights reserved.
+//
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-// Taken from: https://code.google.com/p/leveldb-go/source/browse/leveldb/record/record.go?r=1d5ccbe03246da926391ee12d1c6caae054ff4b0
-// License, authors and contributors informations can be found at bellow URLs respectively:
+//  Taken from: https://code.google.com/p/leveldb-go/source/browse/leveldb/record/record.go?r=1d5ccbe03246da926391ee12d1c6caae054ff4b0
+//  License, author, and contributor information can be found at:
 // 	https://code.google.com/p/leveldb-go/source/browse/LICENSE
 //	https://code.google.com/p/leveldb-go/source/browse/AUTHORS
 //  https://code.google.com/p/leveldb-go/source/browse/CONTRIBUTORS
 
-// Package journal reads and writes sequences of journals. Each journal is a stream
-// of bytes that completes before the next journal starts.
+// Package journal reads and writes sequences of journals. Each journal
+// is a stream of bytes that completes before the next journal starts.
 //
-// When reading, call Next to obtain an io.Reader for the next journal. Next will
-// return io.EOF when there are no more journals. It is valid to call Next
-// without reading the current journal to exhaustion.
+// When reading, call Next to obtain an io.Reader for the next journal.
+// Next will return io.EOF when there are no more journals. It is valid
+// to call Next without reading the current journal to exhaustion.
 //
-// When writing, call Next to obtain an io.Writer for the next journal. Calling
-// Next finishes the current journal. Call Close to finish the final journal.
+// When writing, call Next to obtain an io.Writer for the next journal.
+// Calling Next finishes the current journal. Call Close to finish the
+// final journal.
 //
-// Optionally, call Flush to finish the current journal and flush the underlying
-// writer without starting a new journal. To start a new journal after flushing,
-// call Next.
+// Optionally, call Flush to finish the current journal and flush the
+// underlying writer without starting a new journal. To start a new
+// journal after flushing, call Next.
 //
 // Neither Readers or Writers are safe to use concurrently.
 //
@@ -61,12 +66,13 @@
 //
 // The wire format is that the stream is divided into 32KiB blocks, and each
 // block contains a number of tightly packed chunks. Chunks cannot cross block
-// boundaries. The last block may be shorter than 32 KiB. Any unused bytes in a
-// block must be zero.
+// boundaries. The last block may be shorter than 32 KiB. Any unused bytes in
+// a block must be zero.
 //
 // A journal maps to one or more chunks. Each chunk has a 7 byte header (a 4
-// byte checksum, a 2 byte little-endian uint16 length, and a 1 byte chunk type)
-// followed by a payload. The checksum is over the chunk type and the payload.
+// byte checksum, a 2 byte little-endian uint16 length, and a 1 byte chunk
+// type) followed by a payload. The checksum is over the chunk type and the
+// payload.
 //
 // There are four chunk types: whether the chunk is the full journal, or the
 // first, middle or last chunk of a multi-chunk journal. A multi-chunk journal
@@ -135,8 +141,8 @@ type Reader struct {
 	// buf[i:j] is the unread portion of the current chunk's payload.
 	// The low bound, i, excludes the chunk header.
 	i, j int
-	// n is the number of bytes of buf that are valid. Once reading has started,
-	// only the final block can have n < blockSize.
+	// n is the number of bytes of buf that are valid. Once reading has
+	// started, only the final block can have n < blockSize.
 	n int
 	// last is whether the current chunk is the last chunk of the journal.
 	last bool
@@ -241,10 +247,10 @@ func (r *Reader) nextChunk(first bool) error {
 	}
 }
 
-// Next returns a reader for the next journal. It returns io.EOF if there are no
-// more journals. The reader returned becomes stale after the next Next call,
-// and should no longer be used. If strict is false, the reader will returns
-// io.ErrUnexpectedEOF error when found corrupted journal.
+// Next returns a reader for the next journal. It returns io.EOF if there
+// are no more journals. The reader returned becomes stale after the next
+// Next call, and should no longer be used. If strict is false, the reader
+// will returns io.ErrUnexpectedEOF error when found corrupted journal.
 func (r *Reader) Next() (io.Reader, error) {
 	r.seq++
 	if r.err != nil {
@@ -261,8 +267,8 @@ func (r *Reader) Next() (io.Reader, error) {
 	return &singleReader{r, r.seq, nil}, nil
 }
 
-// Reset resets the journal reader, allows reuse of the journal reader. Reset returns
-// last accumulated error.
+// Reset resets the journal reader, allows reuse of the journal reader.
+// Reset returns last accumulated error.
 func (r *Reader) Reset(reader io.Reader, dropper Dropper, strict, checksum bool) error {
 	r.seq++
 	err := r.err
@@ -463,8 +469,9 @@ func (w *Writer) Reset(writer io.Writer) (err error) {
 	return
 }
 
-// Next returns a writer for the next journal. The writer returned becomes stale
-// after the next Close, Flush or Next call, and should no longer be used.
+// Next returns a writer for the next journal. The writer returned becomes
+// stale after the next Close, Flush or Next call, and should no longer
+// be used.
 func (w *Writer) Next() (io.Writer, error) {
 	w.seq++
 	if w.err != nil {

@@ -1,5 +1,7 @@
 // Copyright © 2012, Suryandaru Triandana <syndtr@gmail.com>
-// All rights reservefs.
+// Copyright © 2021, Jeffrey H. Johnson <trnsz@pobox.com>
+//
+// All rights reserved.
 //
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.

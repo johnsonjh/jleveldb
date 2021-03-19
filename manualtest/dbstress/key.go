@@ -8,6 +8,7 @@ import (
 	"github.com/johnsonjh/jleveldb/leveldb/storage"
 )
 
+// ErrIkeyCorrupted ...
 type ErrIkeyCorrupted struct {
 	Ikey   []byte
 	Reason string

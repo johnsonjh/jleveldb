@@ -1,4 +1,6 @@
 // Copyright © 2016, Suryandaru Triandana <syndtr@gmail.com>
+// Copyright © 2021, Jeffrey H. Johnson <trnsz@pobox.com>
+//
 // All rights reserved.
 //
 // Use of this source code is governed by a BSD-style license that can be
@@ -135,7 +137,7 @@ func (tr *Transaction) put(kt keyType, key, value []byte) error {
 // writes 10 same keys, then those 10 same keys are in the transaction.
 //
 // It is safe to modify the contents of the arguments after Put returns.
-func (tr *Transaction) Put(key, value []byte, wo *opt.WriteOptions) error {
+func (tr *Transaction) Put(key, value []byte, _ *opt.WriteOptions) error {
 	tr.lk.Lock()
 	defer tr.lk.Unlock()
 	if tr.closed {
@@ -150,7 +152,7 @@ func (tr *Transaction) Put(key, value []byte, wo *opt.WriteOptions) error {
 // writes 10 same keys, then those 10 same keys are in the transaction.
 //
 // It is safe to modify the contents of the arguments after Delete returns.
-func (tr *Transaction) Delete(key []byte, wo *opt.WriteOptions) error {
+func (tr *Transaction) Delete(key []byte, _ *opt.WriteOptions) error {
 	tr.lk.Lock()
 	defer tr.lk.Unlock()
 	if tr.closed {
@@ -166,7 +168,7 @@ func (tr *Transaction) Delete(key []byte, wo *opt.WriteOptions) error {
 // writes 10 same keys, then those 10 same keys are in the transaction.
 //
 // It is safe to modify the contents of the arguments after Write returns.
-func (tr *Transaction) Write(b *Batch, wo *opt.WriteOptions) error {
+func (tr *Transaction) Write(b *Batch, _ *opt.WriteOptions) error {
 	if b == nil || b.Len() == 0 {
 		return nil
 	}

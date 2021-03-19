@@ -1,4 +1,6 @@
 // Copyright © 2012, Suryandaru Triandana <syndtr@gmail.com>
+// Copyright © 2021, Jeffrey H. Johnson <trnsz@pobox.com>
+//
 // All rights reserved.
 //
 // Use of this source code is governed by a BSD-style license that can be
@@ -130,7 +132,7 @@ func (s *session) refLoop() {
 		for {
 			// Skip any abandoned version number to prevent blocking processing.
 			if skipAbandoned() {
-				next ++
+				next++
 				continue
 			}
 			// Don't bother the version that has been released.
@@ -162,13 +164,13 @@ func (s *session) refLoop() {
 			referenced[next] = struct{}{}
 			delete(ref, next)
 			delete(deltas, next)
-			next ++
+			next++
 		}
 
 		// Use delta information to process all released versions.
 		for {
 			if skipAbandoned() {
-				next ++
+				next++
 				continue
 			}
 			if d, exist := released[next]; exist {
@@ -176,7 +178,7 @@ func (s *session) refLoop() {
 					applyDelta(d)
 				}
 				delete(released, next)
-				next ++
+				next++
 				continue
 			}
 			return

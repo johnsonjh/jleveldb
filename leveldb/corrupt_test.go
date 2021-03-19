@@ -2,6 +2,8 @@
 // +build goleveldbtests
 
 // Copyright © 2013, Suryandaru Triandana <syndtr@gmail.com>
+// Copyright © 2021, Jeffrey H. Johnson <trnsz@pobox.com>
+//
 // All rights reserved.
 //
 // Use of this source code is governed by a BSD-style license that can be
