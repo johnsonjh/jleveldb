@@ -8,7 +8,7 @@ require (
 	github.com/johnsonjh/leaktestfe v0.0.0-20210305084125-5614f292a6aa
 	github.com/kr/text v0.2.0 // indirect
 	github.com/nxadm/tail v1.4.9-0.20210306212145-92547340f0cc // indirect
-	github.com/onsi/ginkgo v1.15.3-0.20210318025438-9162b864a6c1
+	github.com/onsi/ginkgo v1.16.0
 	github.com/onsi/gomega v1.11.1-0.20210318011924-3360b8c16fc5
 	go.uber.org/goleak v1.1.11-0.20200902203756-89d54f0adef2
 	golang.org/x/lint v0.0.0-20201208152925-83fdc39ff7b5 // indirect
