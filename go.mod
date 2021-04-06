@@ -9,12 +9,12 @@ require (
 	github.com/kr/text v0.2.0 // indirect
 	github.com/nxadm/tail v1.4.9-0.20210306212145-92547340f0cc // indirect
 	github.com/onsi/ginkgo v1.16.0
-	github.com/onsi/gomega v1.11.1-0.20210318011924-3360b8c16fc5
+	github.com/onsi/gomega v1.11.1-0.20210402220241-26a6ffc4b74b
 	go.uber.org/goleak v1.1.11-0.20200902203756-89d54f0adef2
 	golang.org/x/lint v0.0.0-20201208152925-83fdc39ff7b5 // indirect
-	golang.org/x/net v0.0.0-20210316092652-d523dce5a7f4 // indirect
-	golang.org/x/sys v0.0.0-20210317225723-c4fcb01b228e // indirect
-	golang.org/x/text v0.3.6-0.20210227105805-e3aa4adf54f6 // indirect
+	golang.org/x/net v0.0.0-20210405180319-a5a99cb37ef4 // indirect
+	golang.org/x/sys v0.0.0-20210403161142-5e06dd20ab57 // indirect
+	golang.org/x/text v0.3.6 // indirect
 	google.golang.org/protobuf v1.25.0 // indirect
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
