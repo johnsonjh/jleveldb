@@ -1,30 +1,30 @@
 # JLevelDB
 
-----
+---
 
 JLevelDB is an implementation of the
 [LevelDB key/value database](https://code.google.com/p/leveldb) in the
 [Go programming language](https://golang.org), based on [GoLevelDB](https://github.com/syndtr/goleveldb)
 
-----
+---
 
 ## Requirements
 
 - Go 1.16 or later
 
-----
+---
 
 ## Availability
 
 - [GitHub](https://github.com/johnsonjh/jleveldb)
 
-----
+---
 
 ## License
 
-- [BSD-2-Clause License](https://tldrlegal.com/license/bsd-2-clause-license-(freebsd))
+- [BSD-2-Clause License](<https://tldrlegal.com/license/bsd-2-clause-license-(freebsd)>)
 
-----
+---
 
 ## Examples
 
@@ -39,7 +39,7 @@ defer db.Close()
 ...
 ```
 
-----
+---
 
 - Read or modify the database content:
 
@@ -53,7 +53,7 @@ err = db.Delete([]byte("key"), nil)
 ...
 ```
 
-----
+---
 
 - Iterate over database content:
 
@@ -71,7 +71,7 @@ err = iter.Error()
 ...
 ```
 
-----
+---
 
 - Seek-then-Iterate:
 
@@ -86,7 +86,7 @@ err = iter.Error()
 ...
 ```
 
-----
+---
 
 - Iterate over subset of database content:
 
@@ -101,7 +101,7 @@ err = iter.Error()
 ...
 ```
 
-----
+---
 
 - Iterate over subset of database content with a particular prefix:
 
@@ -116,7 +116,7 @@ err = iter.Error()
 ...
 ```
 
-----
+---
 
 - Batch writes:
 
@@ -129,7 +129,7 @@ err = db.Write(batch, nil)
 ...
 ```
 
-----
+---
 
 - Use bloom filter:
 
@@ -143,4 +143,4 @@ defer db.Close()
 ...
 ```
 
-----
+---
