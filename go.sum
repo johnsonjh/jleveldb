@@ -38,6 +38,7 @@ github.com/hpcloud/tail v1.0.0/go.mod h1:ab1qPbhIpdTxEkNHXyeSf5vhxWSCs/tWer42PpO
 github.com/johnsonjh/leaktestfe v0.0.0-20210305084125-5614f292a6aa h1:gHeaUFZ1Df3oPBJEXiruIZXw/B0IMidnKH/uaOErGaA=
 github.com/johnsonjh/leaktestfe v0.0.0-20210305084125-5614f292a6aa/go.mod h1:7L3ArOA0vQEr9QcLqNfBDhThOGbnlEIFpIl/iNjxSsE=
 github.com/johnsonjh/leaktestfe v0.0.0-20210416061945-fe7a93354f76/go.mod h1:7L3ArOA0vQEr9QcLqNfBDhThOGbnlEIFpIl/iNjxSsE=
+github.com/johnsonjh/leaktestfe v0.0.0-20210416103546-f09545587003/go.mod h1:7L3ArOA0vQEr9QcLqNfBDhThOGbnlEIFpIl/iNjxSsE=
 github.com/kr/pretty v0.1.0/go.mod h1:dAy3ld7l9f0ibDNOQOHHMYYIIbhfbHSm3C4ZsoJORNo=
 github.com/kr/pretty v0.2.1 h1:Fmg33tUaq4/8ym9TJN1x7sLJnHVwhP33CNkpYV/7rwI=
 github.com/kr/pretty v0.2.1/go.mod h1:ipq/a2n7PKx3OHsz4KJII5eveXtPO4qwEXGdVfWzfnI=
