@@ -10,8 +10,8 @@ require (
 	github.com/nxadm/tail v1.4.9-0.20210306212145-92547340f0cc // indirect
 	github.com/onsi/ginkgo v1.16.1
 	github.com/onsi/gomega v1.11.1-0.20210402220241-26a6ffc4b74b
-	go.uber.org/goleak v1.1.11-0.20200902203756-89d54f0adef2
-	golang.org/x/lint v0.0.0-20201208152925-83fdc39ff7b5 // indirect
+	go.uber.org/goleak v1.1.11-0.20200902203756-89d54f0adef2 // indirect
+	golang.org/x/lint v0.0.0-20201208152925-83fdc39ff7b5
 	golang.org/x/net v0.0.0-20210415231046-e915ea6b2b7d // indirect
 	golang.org/x/sys v0.0.0-20210415045647-66c3f260301c // indirect
 	golang.org/x/text v0.3.7-0.20210411120140-c2d28a6ddf6c // indirect
