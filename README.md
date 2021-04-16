@@ -1,5 +1,7 @@
 # JLevelDB
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/94d1d98a3b4944908b4212edb1adc878)](https://app.codacy.com/gh/johnsonjh/jleveldb?utm_source=github.com&utm_medium=referral&utm_content=johnsonjh/jleveldb&utm_campaign=Badge_Grade_Settings)
+
 ---
 
 JLevelDB is an implementation of the
