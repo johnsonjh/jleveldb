@@ -50,9 +50,6 @@ github.com/nxadm/tail v1.4.9-0.20210306212145-92547340f0cc h1:St7LefoPAySVH8X8Fk
 github.com/nxadm/tail v1.4.9-0.20210306212145-92547340f0cc/go.mod h1:+ncqLTQzXmGhMZNUePPaPqPvBxHAIsmXswZKocGu+AU=
 github.com/onsi/ginkgo v1.6.0/go.mod h1:lLunBs/Ym6LB5Z9jYTR76FiuTmxDTDusOGeTQH+WWjE=
 github.com/onsi/ginkgo v1.12.1/go.mod h1:zj2OWP4+oCPe1qIXoGWkgMRwljMUYCdkwsT2108oapk=
-<<<<<<< HEAD
-github.com/onsi/ginkgo v1.16.0 h1:NBrNLB37exjJLxXtFOktx6CISBdS1aF8+7MwKlTV8U4=
-github.com/onsi/ginkgo v1.16.0/go.mod h1:CObGmKUOKaSC0RjmoAK7tKyn4Azo5P2IWuoMnvwxz1E=
 github.com/onsi/ginkgo v1.16.1 h1:foqVmeWDD6yYpK+Yz3fHyNIxFYNxswxqNFjSKe+vI54=
 github.com/onsi/ginkgo v1.16.1/go.mod h1:CObGmKUOKaSC0RjmoAK7tKyn4Azo5P2IWuoMnvwxz1E=
 github.com/onsi/gomega v1.7.1/go.mod h1:XdKZgCCFLUoM/7CFJVPcG8C1xQ1AJ0vpAezJrB7JYyY=
