@@ -4,7 +4,8 @@
 
 JLevelDB is an implementation of the
 [LevelDB key/value database](https://code.google.com/p/leveldb) in the
-[Go programming language](https://golang.org), based on [GoLevelDB](https://github.com/syndtr/goleveldb)
+[Go programming language](https://golang.org), based on
+[GoLevelDB](https://github.com/syndtr/goleveldb)
 
 ---
 
