@@ -128,7 +128,7 @@ func RandomIndex(rnd *rand.Rand, n, round int, fn func(i int)) {
 	for x := 0; x < round; x++ {
 		fn(rnd.Intn(n))
 	}
-	return
+
 }
 
 func ShuffledIndex(rnd *rand.Rand, n, round int, fn func(i int)) {
@@ -140,7 +140,7 @@ func ShuffledIndex(rnd *rand.Rand, n, round int, fn func(i int)) {
 			fn(i)
 		}
 	}
-	return
+
 }
 
 func RandomRange(rnd *rand.Rand, n, round int, fn func(start, limit int)) {
@@ -155,7 +155,7 @@ func RandomRange(rnd *rand.Rand, n, round int, fn func(start, limit int)) {
 		}
 		fn(start, start+length)
 	}
-	return
+
 }
 
 func Max(x, y int) int {
