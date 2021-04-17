@@ -1,8 +1,8 @@
 # JLevelDB
 
- [![GoReportCard](https://goreportcard.com/badge/github.com/johnsonjh/jleveldb)](https://goreportcard.com/badge/github.com/johnsonjh/jleveldb)
- [![CodacyBadge](https://api.codacy.com/project/badge/Grade/94d1d98a3b4944908b4212edb1adc878)](https://app.codacy.com/gh/johnsonjh/jleveldb?utm_source=github.com&utm_medium=referral&utm_content=johnsonjh/jleveldb&utm_campaign=Badge_Grade_Settings)
- [![Maintainability](https://api.codeclimate.com/v1/badges/7fc331ccc9fb4e4544ae/maintainability)](https://codeclimate.com/github/johnsonjh/jleveldb/maintainability)
+[![GoReportCard](https://goreportcard.com/badge/github.com/johnsonjh/jleveldb)](https://goreportcard.com/badge/github.com/johnsonjh/jleveldb)
+[![CodacyBadge](https://api.codacy.com/project/badge/Grade/94d1d98a3b4944908b4212edb1adc878)](https://app.codacy.com/gh/johnsonjh/jleveldb?utm_source=github.com&utm_medium=referral&utm_content=johnsonjh/jleveldb&utm_campaign=Badge_Grade_Settings)
+[![Maintainability](https://api.codeclimate.com/v1/badges/7fc331ccc9fb4e4544ae/maintainability)](https://codeclimate.com/github/johnsonjh/jleveldb/maintainability)
 
 ---
 
