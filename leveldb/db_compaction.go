@@ -705,10 +705,7 @@ func (db *DB) tableNeedCompaction() bool {
 func (db *DB) resumeWrite() bool {
 	v := db.s.version()
 	defer v.release()
-	if v.tLen(0) < db.s.o.GetWriteL0PauseTrigger() {
-		return true
-	}
-	return false
+	return v.tLen(0) < db.s.o.GetWriteL0PauseTrigger()
 }
 
 func (db *DB) pauseCompaction(ch chan<- struct{}) {
