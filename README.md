@@ -15,7 +15,7 @@ JLevelDB is an implementation of the
 
 ## Requirements
 
-- Go 1.16 or later
+- Go 1.17 or later
 
 ---
 
