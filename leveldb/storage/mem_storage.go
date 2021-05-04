@@ -58,7 +58,7 @@ func (ms *memStorage) Lock() (Locker, error) {
 	return ms.slock, nil
 }
 
-func (*memStorage) Log(str string) {}
+func (*memStorage) Log(_ string) {}
 
 func (ms *memStorage) SetMeta(fd FileDesc) error {
 	if !FileDescOk(fd) {
