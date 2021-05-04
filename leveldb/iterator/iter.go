@@ -115,15 +115,15 @@ func (i *emptyIterator) rErr() {
 	}
 }
 
-func (*emptyIterator) Valid() bool            { return false }
-func (i *emptyIterator) First() bool          { i.rErr(); return false }
-func (i *emptyIterator) Last() bool           { i.rErr(); return false }
+func (*emptyIterator) Valid() bool          { return false }
+func (i *emptyIterator) First() bool        { i.rErr(); return false }
+func (i *emptyIterator) Last() bool         { i.rErr(); return false }
 func (i *emptyIterator) Seek(_ []byte) bool { i.rErr(); return false }
-func (i *emptyIterator) Next() bool           { i.rErr(); return false }
-func (i *emptyIterator) Prev() bool           { i.rErr(); return false }
-func (*emptyIterator) Key() []byte            { return nil }
-func (*emptyIterator) Value() []byte          { return nil }
-func (i *emptyIterator) Error() error         { return i.err }
+func (i *emptyIterator) Next() bool         { i.rErr(); return false }
+func (i *emptyIterator) Prev() bool         { i.rErr(); return false }
+func (*emptyIterator) Key() []byte          { return nil }
+func (*emptyIterator) Value() []byte        { return nil }
+func (i *emptyIterator) Error() error       { return i.err }
 
 // NewEmptyIterator creates an empty iterator. The err parameter can be
 // nil, but if not nil the given err will be returned by Error method.
