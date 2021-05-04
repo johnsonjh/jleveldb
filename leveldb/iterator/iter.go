@@ -118,7 +118,7 @@ func (i *emptyIterator) rErr() {
 func (*emptyIterator) Valid() bool            { return false }
 func (i *emptyIterator) First() bool          { i.rErr(); return false }
 func (i *emptyIterator) Last() bool           { i.rErr(); return false }
-func (i *emptyIterator) Seek(key []byte) bool { i.rErr(); return false }
+func (i *emptyIterator) Seek(_ []byte) bool { i.rErr(); return false }
 func (i *emptyIterator) Next() bool           { i.rErr(); return false }
 func (i *emptyIterator) Prev() bool           { i.rErr(); return false }
 func (*emptyIterator) Key() []byte            { return nil }
