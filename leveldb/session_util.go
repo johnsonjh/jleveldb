@@ -467,6 +467,12 @@ func (s *session) newManifest(rec *sessionRecord, v *version) (err error) {
 
 // Flush record to disk.
 func (s *session) flushManifest(rec *sessionRecord) (err error) {
+    if !s.o.GetNoSync() {
+        err = s.manifestWriter.Sync()
+        if err != nil {
+            return
+        }
+    }
 	s.fillRecord(rec, false)
 	w, err := s.manifest.Next()
 	if err != nil {
