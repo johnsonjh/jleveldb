@@ -27,6 +27,8 @@ github.com/google/go-cmp v0.5.5/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/
 github.com/hpcloud/tail v1.0.0/go.mod h1:ab1qPbhIpdTxEkNHXyeSf5vhxWSCs/tWer42PpOxQnU=
 github.com/johnsonjh/leaktestfe v0.0.0-20210508225121-8eb1ff631186 h1:QqplQB1YjUfLUCgHqLi6uDPP2XLUYkN+2rtDg5/oQos=
 github.com/johnsonjh/leaktestfe v0.0.0-20210508225121-8eb1ff631186/go.mod h1:Upk6JDupXOe2MzkGJFvoZcOanAI9igZ0CRh5RwLPyOU=
+github.com/johnsonjh/leaktestfe v0.0.0-20210512013957-c81770ce31d0 h1:9bqIBOKQlkmQquDIWHLEj29FAiirIAw2y6kckCWBrp0=
+github.com/johnsonjh/leaktestfe v0.0.0-20210512013957-c81770ce31d0/go.mod h1:ZjAknwT7a8w56dGm/XQUElLlUtoN5oxj+OJ784VAIHE=
 github.com/kr/pretty v0.1.0/go.mod h1:dAy3ld7l9f0ibDNOQOHHMYYIIbhfbHSm3C4ZsoJORNo=
 github.com/kr/pretty v0.2.1 h1:Fmg33tUaq4/8ym9TJN1x7sLJnHVwhP33CNkpYV/7rwI=
 github.com/kr/pretty v0.2.1/go.mod h1:ipq/a2n7PKx3OHsz4KJII5eveXtPO4qwEXGdVfWzfnI=
