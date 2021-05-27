@@ -9,7 +9,7 @@ require (
 	github.com/kr/text v0.2.0 // indirect
 	github.com/nxadm/tail v1.4.9-0.20210306212145-92547340f0cc // indirect
 	github.com/onsi/ginkgo v1.16.2
-	github.com/onsi/gomega v1.12.1-0.20210521125938-12eb7787ab28
+	github.com/onsi/gomega v1.13.0
 	github.com/stretchr/testify v1.7.1-0.20210427113832-6241f9ab9942 // indirect
 	go.uber.org/goleak v1.1.11-0.20210517221212-5d1efd4d97e1
 	golang.org/x/lint v0.0.0-20210508222113-6edffad5e616 // indirect
