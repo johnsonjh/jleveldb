@@ -817,10 +817,18 @@ func (db *DB) mCompaction() {
 	}()
 
 	for {
+		db.compActiveLk.Lock()
+		db.memCompActive = false
+		db.compActiveLk.Unlock()
+
 		select {
 		case x = <-db.mcompCmdC:
 			switch x.(type) {
 			case cAuto:
+				db.compActiveLk.Lock()
+				db.memCompActive = true
+				db.compActiveLk.Unlock()
+
 				db.memCompaction()
 				x.ack(nil)
 				x = nil
@@ -856,6 +864,10 @@ func (db *DB) tCompaction() {
 	}()
 
 	for {
+		db.compActiveLk.Lock()
+		db.tableCompActive = false
+		db.compActiveLk.Unlock()
+
 		if db.tableNeedCompaction() {
 			select {
 			case x = <-db.tcompCmdC:
@@ -889,6 +901,9 @@ func (db *DB) tCompaction() {
 				return
 			}
 		}
+		db.compActiveLk.Lock()
+		db.tableCompActive = true
+		db.compActiveLk.Unlock()
 		if x != nil {
 			switch cmd := x.(type) {
 			case cAuto:
