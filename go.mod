@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/fsnotify/fsnotify v1.4.10-0.20200417215612-7f4cf4dd2b52
 	github.com/golang/snappy v0.0.4-0.20210608040537-544b4180ac70
-	github.com/johnsonjh/leaktestfe v0.0.0-20210616124443-1446a662defb
+	github.com/johnsonjh/leaktestfe v0.0.0-20210629212503-a92ef2d4610c
 	github.com/kr/text v0.2.0
 	github.com/nxadm/tail v1.4.9-0.20210306212145-92547340f0cc
 	github.com/onsi/ginkgo v1.16.5-0.20210602183418-f25097753746
@@ -16,7 +16,7 @@ require (
 	golang.org/x/net v0.0.0-20210614182718-04defd469f4e
 	golang.org/x/sys v0.0.0-20210629170331-7dc0b73dc9fb
 	golang.org/x/text v0.3.7-0.20210524175448-3115f89c4b99
-	golang.org/x/tools v0.1.4
+	golang.org/x/tools v0.1.5-0.20210629191230-72e4d1bb8d47
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7
 	gopkg.in/yaml.v2 v2.4.0
