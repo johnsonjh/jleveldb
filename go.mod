@@ -3,6 +3,7 @@ module github.com/johnsonjh/jleveldb
 go 1.17
 
 require (
+	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/fsnotify/fsnotify v1.4.10-0.20200417215612-7f4cf4dd2b52
 	github.com/golang/snappy v0.0.4-0.20210608040537-544b4180ac70
 	github.com/johnsonjh/leaktestfe v0.0.0-20210629212503-a92ef2d4610c
