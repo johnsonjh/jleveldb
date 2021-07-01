@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/fsnotify/fsnotify v1.4.10-0.20200417215612-7f4cf4dd2b52
-	github.com/golang/snappy v0.0.4-0.20210608040537-544b4180ac70
+	github.com/golang/snappy v0.0.4
 	github.com/johnsonjh/leaktestfe v0.0.0-20210629212503-a92ef2d4610c
 	github.com/kr/text v0.2.0
 	github.com/nxadm/tail v1.4.9-0.20210306212145-92547340f0cc
