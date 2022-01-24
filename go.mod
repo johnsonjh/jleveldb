@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/golang/snappy v0.0.4
 	github.com/onsi/ginkgo v1.16.6-0.20211111152803-71572c10c2b0
-	github.com/onsi/gomega v1.17.1-0.20211207160332-bdc087c2ec9d
+	github.com/onsi/gomega v1.18.0
 )
 
 require (
@@ -21,7 +21,7 @@ require (
 	github.com/kr/pretty v0.3.0 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/nxadm/tail v1.4.9-0.20211102113032-6abd9f9c8777 // indirect
-	github.com/onsi/ginkgo/v2 v2.0.0-rc2 // indirect
+	github.com/onsi/ginkgo/v2 v2.0.0 // indirect
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	github.com/rogpeppe/go-internal v1.8.1-0.20211023094830-115ce09fd6b4 // indirect
 	github.com/stretchr/objx v0.3.1-0.20210819104457-27373ced0947 // indirect
@@ -29,7 +29,7 @@ require (
 	go.uber.org/goleak v1.1.12 // indirect
 	golang.org/x/lint v0.0.0-20210508222113-6edffad5e616 // indirect
 	golang.org/x/net v0.0.0-20211208012354-db4efeb81f4b // indirect
-	golang.org/x/sys v0.0.0-20211205182925-97ca703d548d // indirect
+	golang.org/x/sys v0.0.0-20211216021012-1d35b9e2eb4e // indirect
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
 	golang.org/x/text v0.3.8-0.20211105212822-18b340fc7af2 // indirect
 	golang.org/x/tools v0.1.9-0.20211208161556-3fca6a08d78f // indirect
