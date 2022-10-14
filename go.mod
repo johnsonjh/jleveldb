@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/golang/snappy v0.0.5-0.20220116011046-fa5810519dcb
 	github.com/onsi/ginkgo v1.16.6-0.20211111152803-71572c10c2b0
-	github.com/onsi/gomega v1.21.1
+	github.com/onsi/gomega v1.22.1
 )
 
 require (
@@ -22,7 +22,7 @@ require (
 	github.com/kr/pretty v0.3.0 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/nxadm/tail v1.4.9-0.20211216163028-4472660a31a6 // indirect
-	github.com/onsi/ginkgo/v2 v2.1.6 // indirect
+	github.com/onsi/ginkgo/v2 v2.3.0 // indirect
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	github.com/rogpeppe/go-internal v1.8.2-0.20220312160953-3461ca1f2345 // indirect
 	github.com/stretchr/objx v0.3.1-0.20220322103904-2f77885d62f1 // indirect
