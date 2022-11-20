@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/golang/snappy v0.0.5-0.20220116011046-fa5810519dcb
 	github.com/onsi/ginkgo v1.16.6-0.20211111152803-71572c10c2b0
-	github.com/onsi/gomega v1.23.0
+	github.com/onsi/gomega v1.24.1
 )
 
 require (
@@ -13,10 +13,10 @@ require (
 	github.com/google/go-cmp v0.5.9 // indirect
 	github.com/kr/pretty v0.3.1 // indirect
 	github.com/nxadm/tail v1.4.9-0.20211216163028-4472660a31a6 // indirect
-	github.com/onsi/ginkgo/v2 v2.4.0 // indirect
+	github.com/onsi/ginkgo/v2 v2.5.0 // indirect
 	github.com/rogpeppe/go-internal v1.9.1-0.20220930070655-645eaf1ff378 // indirect
-	golang.org/x/net v0.1.0 // indirect
-	golang.org/x/sys v0.1.0 // indirect
+	golang.org/x/net v0.2.0 // indirect
+	golang.org/x/sys v0.2.0 // indirect
 	golang.org/x/text v0.4.0 // indirect
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
