@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/golang/snappy v0.0.5-0.20220116011046-fa5810519dcb
 	github.com/onsi/ginkgo v1.16.6-0.20211111152803-71572c10c2b0
-	github.com/onsi/gomega v1.24.2-0.20221210164807-6ebc0bf10ce6
+	github.com/onsi/gomega v1.24.2
 )
 
 require (
