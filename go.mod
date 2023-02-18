@@ -6,7 +6,7 @@ require (
 	github.com/golang/snappy v0.0.5-0.20220116011046-fa5810519dcb
 	github.com/onsi/ginkgo v1.16.5
 	github.com/onsi/ginkgo/v2 v2.8.1
-	github.com/onsi/gomega v1.26.0
+	github.com/onsi/gomega v1.27.1
 )
 
 require (
@@ -16,7 +16,7 @@ require (
 	github.com/kr/pretty v0.3.1 // indirect
 	github.com/nxadm/tail v1.4.9-0.20211216163028-4472660a31a6 // indirect
 	github.com/rogpeppe/go-internal v1.9.1-0.20221123163938-fef05454be76 // indirect
-	golang.org/x/net v0.6.0 // indirect
+	golang.org/x/net v0.7.0 // indirect
 	golang.org/x/sys v0.5.0 // indirect
 	golang.org/x/text v0.7.0 // indirect
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
