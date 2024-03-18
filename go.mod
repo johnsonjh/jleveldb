@@ -4,9 +4,9 @@ go 1.19
 
 require (
 	github.com/golang/snappy v0.0.4
+	github.com/onsi/ginkgo v1.16.5
 	github.com/onsi/ginkgo/v2 v2.16.0
-	github.com/onsi/ginkgo/v2 v2.16.0
-	github.com/onsi/gomega v1.31.1
+	github.com/onsi/gomega v1.32.0
 )
 
 require (
