@@ -2,7 +2,7 @@ module github.com/johnsonjh/jleveldb
 
 go 1.22.0
 
-toolchain go1.24.0
+toolchain go1.24.1
 
 require (
 	github.com/golang/snappy v0.0.5-0.20231225225746-43d5d4cd4e0e
