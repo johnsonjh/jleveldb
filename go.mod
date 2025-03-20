@@ -6,8 +6,8 @@ toolchain go1.24.1
 
 require (
 	github.com/golang/snappy v1.0.0
-	github.com/onsi/ginkgo/v2 v2.23.0
-	github.com/onsi/ginkgo/v2 v2.23.0
+	github.com/onsi/ginkgo v1.16.5
+	github.com/onsi/ginkgo/v2 v2.23.2
 	github.com/onsi/gomega v1.36.2
 )
 
