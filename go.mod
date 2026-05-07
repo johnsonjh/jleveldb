@@ -2,11 +2,11 @@ module github.com/johnsonjh/jleveldb
 
 go 1.25.0
 
-toolchain go1.26.2
+toolchain go1.26.3
 
 require (
 	github.com/golang/snappy v1.0.0
-	github.com/onsi/ginkgo/v2 v2.28.3
+	github.com/onsi/ginkgo v1.16.5
 	github.com/onsi/ginkgo/v2 v2.28.3
 	github.com/onsi/gomega v1.40.0
 )
